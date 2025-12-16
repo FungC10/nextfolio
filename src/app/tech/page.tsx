@@ -10,6 +10,33 @@ import { Chip } from '@/components/ui/Chip'
 
 const skillCategories = [
   {
+    title: 'Auth & Permissions',
+    skills: [
+      { name: 'NextAuth', description: 'Authentication framework' },
+      { name: 'Session Management', description: 'User session handling' },
+      { name: 'Role-based Access', description: 'Permission systems' },
+      { name: 'JWT Tokens', description: 'Secure token handling' },
+    ],
+  },
+  {
+    title: 'Realtime & Integration',
+    skills: [
+      { name: 'Socket.io', description: 'Real-time communication' },
+      { name: 'Supabase Realtime', description: 'Database subscriptions' },
+      { name: 'Stripe', description: 'Payment processing' },
+      { name: 'REST APIs', description: 'API integration patterns' },
+    ],
+  },
+  {
+    title: 'Deployment & DevOps',
+    skills: [
+      { name: 'Vercel', description: 'Frontend deployment' },
+      { name: 'GitHub Actions', description: 'CI/CD pipelines' },
+      { name: 'Docker', description: 'Containerization' },
+      { name: 'Environment Management', description: 'Config & secrets' },
+    ],
+  },
+  {
     title: 'Frontend Core',
     skills: [
       { name: 'React', description: 'Component-based UI library' },
@@ -17,6 +44,15 @@ const skillCategories = [
       { name: 'TypeScript', description: 'Type-safe JavaScript' },
       { name: 'Tailwind CSS', description: 'Utility-first CSS framework' },
       { name: 'Framer Motion', description: 'Animation & interaction library' },
+    ],
+  },
+  {
+    title: 'Database & Backend',
+    skills: [
+      { name: 'Prisma', description: 'Database ORM' },
+      { name: 'SQLite', description: 'Local database' },
+      { name: 'Neon', description: 'Serverless PostgreSQL' },
+      { name: 'MongoDB', description: 'NoSQL database' },
     ],
   },
   {
@@ -46,42 +82,6 @@ const skillCategories = [
       { name: 'OpenWeatherMap', description: 'Weather data integration' },
     ],
   },
-  {
-    title: 'Auth & Permissions',
-    skills: [
-      { name: 'NextAuth', description: 'Authentication framework' },
-      { name: 'Session Management', description: 'User session handling' },
-      { name: 'Role-based Access', description: 'Permission systems' },
-      { name: 'JWT Tokens', description: 'Secure token handling' },
-    ],
-  },
-  {
-    title: 'Database & Backend',
-    skills: [
-      { name: 'Prisma', description: 'Database ORM' },
-      { name: 'SQLite', description: 'Local database' },
-      { name: 'Neon', description: 'Serverless PostgreSQL' },
-      { name: 'MongoDB', description: 'NoSQL database' },
-    ],
-  },
-  {
-    title: 'Realtime & Integration',
-    skills: [
-      { name: 'Socket.io', description: 'Real-time communication' },
-      { name: 'Supabase Realtime', description: 'Database subscriptions' },
-      { name: 'Stripe', description: 'Payment processing' },
-      { name: 'CoinGecko API', description: 'Crypto data integration' },
-    ],
-  },
-  {
-    title: 'Deployment & DevOps',
-    skills: [
-      { name: 'Vercel', description: 'Frontend deployment' },
-      { name: 'GitHub Actions', description: 'CI/CD pipelines' },
-      { name: 'Docker', description: 'Containerization' },
-      { name: 'Environment Management', description: 'Config & secrets' },
-    ],
-  },
 ]
 
 export default function TechPage() {
@@ -96,7 +96,7 @@ export default function TechPage() {
             Tech & <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Skills</span>
           </h1>
           <p className="mx-auto max-w-3xl text-center text-lg text-slate-300 leading-relaxed">
-            A comprehensive tech stack covering frontend development, data visualization, full-stack integration, and modern deployment practices. From React components to real-time databases, these technologies power 7 diverse portfolio projects.
+            A production-focused tech stack emphasizing authentication, authorization, real-time systems, and deployment. Core expertise in NextAuth, RBAC patterns, Socket.io, and server-side rendering. Supporting skills in data visualization, state management, and API integrations.
           </p>
         </div>
 

@@ -11,34 +11,29 @@ export interface Project {
   }
   image?: string
   featured?: boolean
+  status?: 'in-progress' | 'archived' | 'completed'
+  statusLabel?: string
+  roadmap?: {
+    unresolved?: string[]
+    whyNotFinished?: string
+    nextSteps?: string[]
+  }
 }
 
 export const projects: Project[] = [
   {
-    id: '1',
-    title: 'Nextfolio',
-    slug: 'nextfolio',
-    summary: 'Your brand hub with unified motion and six case studies.',
-    description: 'A comprehensive personal portfolio showcasing 7 diverse projects with smooth animations, case studies, and professional presentation. Features unified design system, responsive layout, and optimized performance.',
-    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Framer Motion', 'Vercel'],
+    id: '6',
+    title: 'Accessly',
+    slug: 'accessly',
+    summary: 'Enterprise auth platform with RBAC, realtime chat, and SSR dashboards.',
+    description: 'A full-stack enterprise application featuring NextAuth authentication, role-based access control (RBAC), real-time chat with Socket.io, and server-side rendered dashboards. Demonstrates production-ready patterns for authentication, authorization, and real-time collaboration.',
+    tags: ['Next.js', 'NextAuth', 'Prisma', 'Socket.io', 'TypeScript', 'PostgreSQL'],
     links: {
-      demo: 'https://nextfolio.dev',
-      github: 'https://github.com/yourusername/nextfolio',
+      demo: 'https://accessly.vercel.app',
+      github: 'https://github.com/yourusername/accessly',
     },
     featured: true,
-  },
-  {
-    id: '2',
-    title: 'InsightBoard',
-    slug: 'insightboard',
-    summary: 'Live crypto dashboard with charts, filters, and watchlist.',
-    description: 'A real-time cryptocurrency tracking dashboard featuring live price updates, interactive charts, custom watchlists, and advanced filtering. Built with data visualization and caching logic for optimal performance.',
-    tags: ['Next.js', 'TypeScript', 'TanStack Query', 'Recharts'],
-    links: {
-      demo: 'https://insightboard.vercel.app',
-      github: 'https://github.com/yourusername/insightboard',
-    },
-    featured: true,
+    status: 'completed',
   },
   {
     id: '3',
@@ -52,6 +47,21 @@ export const projects: Project[] = [
       github: 'https://github.com/yourusername/taskzen',
     },
     featured: true,
+    status: 'completed',
+  },
+  {
+    id: '5',
+    title: 'ShopVerse',
+    slug: 'shopverse',
+    summary: 'Full e-commerce flow from product list to Stripe checkout.',
+    description: 'A complete e-commerce demonstration covering the full shopping journey from product discovery to secure checkout. Features product catalog, cart management, wishlist, and Stripe integration with form validation.',
+    tags: ['Next.js', 'Stripe', 'Prisma', 'Zod', 'React Hook Form'],
+    links: {
+      demo: 'https://shopverse.vercel.app',
+      github: 'https://github.com/yourusername/shopverse',
+    },
+    featured: true,
+    status: 'completed',
   },
   {
     id: '4',
@@ -65,32 +75,36 @@ export const projects: Project[] = [
       github: 'https://github.com/yourusername/weatherflow',
     },
     featured: false,
+    status: 'completed',
   },
   {
-    id: '5',
-    title: 'ShopVerse',
-    slug: 'shopverse',
-    summary: 'From product list to Stripe checkout + validation.',
-    description: 'A complete e-commerce demonstration covering the full shopping journey from product discovery to secure checkout. Features product catalog, cart management, wishlist, and Stripe integration.',
-    tags: ['Next.js', 'Stripe', 'Prisma', 'Zod', 'React Hook Form'],
+    id: '2',
+    title: 'InsightBoard',
+    slug: 'insightboard',
+    summary: 'Crypto dashboard with charts and watchlist (demo with sample data).',
+    description: 'A cryptocurrency tracking dashboard featuring interactive charts, custom watchlists, and advanced filtering. Currently using sample data for demonstration purposes. Built with data visualization and caching logic for optimal performance.',
+    tags: ['Next.js', 'TypeScript', 'TanStack Query', 'Recharts'],
     links: {
-      demo: 'https://shopverse.vercel.app',
-      github: 'https://github.com/yourusername/shopverse',
+      demo: 'https://insightboard.vercel.app',
+      github: 'https://github.com/yourusername/insightboard',
     },
     featured: false,
+    status: 'archived',
+    statusLabel: 'Demo Mode (Sample Data)',
   },
   {
-    id: '6',
-    title: 'Accessly',
-    slug: 'accessly',
-    summary: 'Auth, roles, realtime chat, and SSR dashboard.',
-    description: 'An enterprise-grade authentication and collaboration platform featuring user roles, real-time chat, and server-side rendered dashboards. Demonstrates full-stack development with modern auth patterns.',
-    tags: ['Next.js', 'NextAuth', 'Prisma', 'Socket.io'],
+    id: '1',
+    title: 'Nextfolio',
+    slug: 'nextfolio',
+    summary: 'Personal portfolio with unified design and project showcase.',
+    description: 'A comprehensive personal portfolio showcasing projects with smooth animations, case studies, and professional presentation. Features unified design system, responsive layout, and optimized performance.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Framer Motion', 'Vercel'],
     links: {
-      demo: 'https://accessly.vercel.app',
-      github: 'https://github.com/yourusername/accessly',
+      demo: 'https://nextfolio.dev',
+      github: 'https://github.com/yourusername/nextfolio',
     },
     featured: false,
+    status: 'completed',
   },
   {
     id: '7',
@@ -104,5 +118,6 @@ export const projects: Project[] = [
       github: 'https://github.com/yourusername/motioncanvas',
     },
     featured: false,
+    status: 'completed',
   },
 ]

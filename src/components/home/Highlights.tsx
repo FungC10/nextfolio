@@ -62,10 +62,10 @@ function Highlights() {
                   Selected <span className="text-cyan-400">Work</span>
                 </h2>
                 <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-                  Featured projects showcasing data visualization, task management, and e-commerce development.
+                  Featured projects showcasing enterprise authentication, task management, and e-commerce development.
                 </p>
               </div>
-              <ProjectGrid projectIds={['2', '3', '5']} />
+              <ProjectGrid projectIds={['6', '3', '5']} />
               <div className="text-center mt-8">
                 <Link
                   href="/projects"

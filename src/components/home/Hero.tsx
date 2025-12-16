@@ -54,15 +54,15 @@ function Hero() {
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight">
-              I craft{' '}
-              <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">responsive</span>,{' '}
-              <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">interactive</span> web experiences
-              with React & Next.js.
+              I build{' '}
+              <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">enterprise</span> web applications
+              with{' '}
+              <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">auth</span>,{' '}
+              <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">RBAC</span>, and realtime features.
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-slate-300 mb-16 max-w-4xl mx-auto leading-relaxed">
-              Specializing in modern frontend development, I build applications
-              that are fast, accessible, and delightful to use. Explore 7 diverse projects showcasing everything from crypto dashboards to generative art.
+              Full-stack developer specializing in authentication, role-based access control, and real-time collaboration. Building Accessly—an enterprise platform with NextAuth, Socket.io, and SSR dashboards.
             </p>
 
             <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-8 justify-center items-center">
@@ -119,10 +119,11 @@ function Hero() {
             variants={itemVariants}
             style={{ willChange: 'transform, opacity' }}
           >
-            I craft{' '}
-            <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">responsive</span>,{' '}
-            <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">interactive</span> web experiences
-            with React & Next.js.
+            I build{' '}
+            <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">enterprise</span> web applications
+            with{' '}
+            <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">auth</span>,{' '}
+            <span className="text-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">RBAC</span>, and realtime features.
           </motion.h1>
 
           <motion.p
@@ -130,8 +131,7 @@ function Hero() {
             variants={itemVariants}
             style={{ willChange: 'transform, opacity' }}
           >
-            Specializing in modern frontend development, I build applications
-            that are fast, accessible, and delightful to use.
+            Full-stack developer specializing in authentication, role-based access control, and real-time collaboration. Building Accessly—an enterprise platform with NextAuth, Socket.io, and SSR dashboards.
           </motion.p>
 
               <motion.div
